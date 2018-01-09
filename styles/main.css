@@ -1,0 +1,151 @@
+body {
+	margin: 0;
+	font-family: 'Fredoka One', cursive;
+}
+
+.active {
+	display: block !important;
+}
+
+/* --------------- NAVIGATION --------------------*/
+
+aside {
+	position: fixed;
+	/*background-color: rgba(135, 202, 229, 0.8);*/
+	width: 120px;
+	height: 100vh;
+	top: 16%;
+}
+
+#navbar {
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;		
+	padding: 20px;
+	font-size: 17px;
+
+}
+
+.nav-link {
+	padding: 10px 0 !important;
+	position: relative;
+}
+
+.nav-link a {
+	position: absolute;
+	float: left;
+	text-decoration: none;
+}
+
+.hidden-nav {
+	display: none;
+}
+
+/* ------------------------- MAIN DIVS ---------------------*/
+
+.scrollDiv {
+	width: 90%;
+	float: right;
+	height: 100vh;
+	text-align: center;
+}
+
+/*__________________________ about ________________________*/
+
+#about {
+	/*background-color: #F2E97E;*/
+	border: 2px black solid;
+}
+
+/*#first p:hover {
+	letter-spacing: 10px;
+}*/
+
+
+.aboutPhoto {
+	margin: 0 auto;
+	display: block;
+	width: 85%;
+}
+
+@media screen and (min-width: 780px) {
+	.aboutPhoto {
+		margin: 0 auto;
+		display: block;
+		width: 45%;
+	}
+
+}
+
+i {
+	margin: 6px;
+}
+
+.fa-google-plus {
+	color: #bc4c40;
+}
+
+.fa-facebook-official {
+	color: #14549e;
+}
+
+.fa-github {
+
+}
+
+
+.fa-linkedin-square {
+	color: #1c87ce;
+}
+
+.fa-whatsapp {
+	color: #19a85c;
+}
+
+
+
+
+/*__________________________ skills ________________________*/
+
+
+#skills {
+	/*background-color: #4CBE9E;*/
+	border: 2px black solid;
+}
+
+
+/*__________________________ portfolio ________________________*/
+
+
+#portfolio {
+	/*background-color: #5C4B51;*/
+	border: 2px black solid;
+}
+
+
+
+/*__________________________ ejournal ________________________*/
+
+
+#ejournal {
+	/*background-color: #F39C5C;*/
+	border: 2px black solid;
+}
+
+
+/*__________________________ contact ________________________*/
+
+
+#contact {
+	/*background-color: #4CBE9E;*/
+	border: 2px black solid;
+}
+
+
+
+/*__________________________ try now ________________________*/
+
+
+#try {
+	/*background-color: #F06060;*/
+	border: 2px black solid;
+}
