@@ -5,14 +5,17 @@
 		<title>Elina's Personal Website</title>
 		<link rel="stylesheet" type="text/css" href="styles/main.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
 	</head>
 	<body>
+
+		<!-- _________________________________ NAVBAR ____________________________ -->
 		<aside>
-			<nav class="nav"
+			<div class="nav"
 				id="navbar"
-				onmouseenter="navMouseIn()" 
+				onmouseenter="navMouseIn()"
 				onmouseleave="navMouseOut()">
 
 				<p class="nav-link">
@@ -20,7 +23,7 @@
 					<a href="#about" class="hidden-nav" >About</a>
 				</p> <br/>
 				<p class="nav-link">
-					<a href="#skills">S</a>					
+					<a href="#skills">S</a>
 					<a href="#skills" class="hidden-nav">Skills</a>
 				</p> <br/>
 				<p class="nav-link" >
@@ -39,44 +42,98 @@
 					<a href="#try">T</a>
 					<a href="#try" class="hidden-nav">Try Now!</a>
 				</p> <br/>
-			</nav>
+			</div>
 		</aside>
-		<main>
-			<div id="main">
-				<div id="about" class="scrollDiv invisible">
-					<h1> HI! </h1>
+		<main id="main">
 
-					<img src="img/about-image.png" class="aboutPhoto">
+				<!-- _________________________________ ABOUT SECTION ____________________________ -->
 
-					<h2>My Name Is Elina Hovakimyan</h2>
+				<div id="about" class="scrollDiv active">
+					<h1> Hi! I am Elina Hovakimyan</h1>
+
+					<!-- <img src="img/about-image.png" class="aboutPhoto"> -->
+					<img src="img/my-photo.jpg" class="myPhoto">
+					<h2><code>&#10094;wlc&#10095; Let's work together! &#10094;/wlc&#10095;</code></h2>
+
 					<p>
-						I am a Javascript ninja, front-end wizard and WordPress expert with 2+ years experience. I am experienced with all stages of the development cycle for dynamic web projects. Having an in-depth knowledge including HTML5, CSS, CSS3, SASS, JavaScript, ReactJS, NodeJS with Express framework. To make my projects look better and be perfectly responsive I use frameworks, such as Bootstrap and MaterializeCSS. Also, I have a strong background in time management and leadership which helps me to be more organized and responsible.
+						I am a Javascript ninja, front-end wizard and WordPress expert with 2+ years experience.
+						I am experienced with all stages of the development cycle for dynamic web projects.
+						Having an in-depth knowledge including HTML5, CSS, CSS3, SASS, JavaScript, ReactJS, NodeJS with Express framework.
+						To make my projects look better and be perfectly responsive I use frameworks, such as Bootstrap and MaterializeCSS.
 					</p>
-					<i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
-					<i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
-					<i class="fa fa-github fa-4x" aria-hidden="true"></i>
-					<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
-					<i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
 
+					<div class="contact-btns">
+						<a class="waves-effect waves-light btn about-btn" href="assets/CV_ElinaHovakimyan.pdf" download><i class="material-icons left fa fa-cloud-download"></i>Download My CV</a>
+						<a class="waves-effect waves-light btn about-btn"><i class="material-icons right fa fa-envelope"></i>Start a Project</a>
+					</div>
+
+					<div class="social-icons">
+						<a class="tooltipped" data-position="top" data-delay="50" data-tooltip="elinahovakimyan@gmail.com">
+								<i class="social fa fa-google fa-2x" aria-hidden="true"></i>
+						</a>
+
+						<a href="https://www.facebook.com/elin.hovakimyan" target="_blank">
+							<i class="social fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+						</a>
+
+						<a href="https://github.com/elinahovakimyan" target="_blank">
+							<i class="social fa fa-github fa-4x" aria-hidden="true"></i>
+						</a>
+
+						<a href="https://www.linkedin.com/in/elina-hovakimyan/" target="_blank">
+							<i class="social fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+						</a>
+
+						<a class="tooltipped" data-position="top" data-delay="50" data-tooltip="+37455855615">
+								<i class="social fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+						</a>
+					</div>
 				</div>
-				<div id="skills" class="scrollDiv invisible">
+
+
+				<!-- _________________________________ SKILLLS SECTION ____________________________ -->
+
+				<div id="skills" class="scrollDiv invisible next">
 					Two
 				</div>
+
+
+				<!-- _________________________________ PORTFOLIO SECTION ____________________________ -->
+
 				<div id="portfolio" class="scrollDiv invisible">
 					Three
 				</div>
+
+
+				<!-- _________________________________ EJOURNAL SECTION ____________________________ -->
+
 				<div id="ejournal" class="scrollDiv invisible">
 					Four
 				</div>
+
+
+				<!-- _________________________________ CONTACT SECTION ____________________________ -->
+
 				<div id="contact" class="scrollDiv invisible">
 					Five
 				</div>
+
+
+				<!-- _________________________________ TRY SECTION ____________________________ -->
+
 				<div id="try" class="scrollDiv invisible">
 					Let's go
 				</div>
-			</div>
+
+
+				<!-- <span>
+					<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons fa  fa-step-backward"></i></a>
+					<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons fa  fa-step-forward"></i></a>
+				</span> -->
 		</main>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<script type="text/javascript" src="scripts/eventhandlers.js"></script>
-	<script type="text/javascript" src="scripts/scroll.js"></script>
+
 	</body>
 </html>
