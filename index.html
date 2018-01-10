@@ -4,6 +4,7 @@
 	<head>
 		<title>Elina's Personal Website</title>
 		<link rel="stylesheet" type="text/css" href="styles/main.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/tiltedpage-scroll.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -24,7 +25,7 @@
 				</p> <br/>
 				<p class="nav-link">
 					<a href="#skills">S</a>
-					<a href="#skills" class="hidden-nav">Skills</a>
+					<a href="#skillssec" class="hidden-nav">Skills</a>
 				</p> <br/>
 				<p class="nav-link" >
 					<a href="#portfolio">P</a>
@@ -46,7 +47,8 @@
 		</aside>
 		<main id="main">
 
-				<!-- _________________________________ ABOUT SECTION ____________________________ -->
+<!-- _________________________________ ABOUT SECTION ____________________________ -->
+			<section class="page1" >
 
 				<div id="about" class="scrollDiv active">
 					<h1> Hi! I am Elina Hovakimyan</h1>
@@ -61,11 +63,11 @@
 						Having an in-depth knowledge including HTML5, CSS, CSS3, SASS, JavaScript, ReactJS, NodeJS with Express framework.
 						To make my projects look better and be perfectly responsive I use frameworks, such as Bootstrap and MaterializeCSS.
 					</p>
-
 					<div class="contact-btns">
 						<a class="waves-effect waves-light btn about-btn" href="assets/CV_ElinaHovakimyan.pdf" download><i class="material-icons left fa fa-cloud-download"></i>Download My CV</a>
 						<a class="waves-effect waves-light btn about-btn"><i class="material-icons right fa fa-envelope"></i>Start a Project</a>
 					</div>
+
 
 					<div class="social-icons">
 						<a class="tooltipped" data-position="top" data-delay="50" data-tooltip="elinahovakimyan@gmail.com">
@@ -89,42 +91,43 @@
 						</a>
 					</div>
 				</div>
+			</section>
 
+<!-- _______ _________ __________ _______ SKILLLS SECTION ______ ______ _______ _________ -->
 
-				<!-- _________________________________ SKILLLS SECTION ____________________________ -->
-
+			<section class="page2" id="skillssec">
 				<div id="skills" class="scrollDiv invisible next">
 					Two
 				</div>
+			</section>
 
-
-				<!-- _________________________________ PORTFOLIO SECTION ____________________________ -->
-
+<!-- ______ _________ _________ _________ PORTFOLIO SECTION ______ ______ _______ _________ -->
+			<section class="page3">
 				<div id="portfolio" class="scrollDiv invisible">
 					Three
 				</div>
+			</section>
 
-
-				<!-- _________________________________ EJOURNAL SECTION ____________________________ -->
-
+<!-- ______ _____________ _______ _______ EJOURNAL SECTION ____ __________ ________ ______ -->
+		 	<section class="page4">
 				<div id="ejournal" class="scrollDiv invisible">
 					Four
 				</div>
+			</section>
 
-
-				<!-- _________________________________ CONTACT SECTION ____________________________ -->
-
+<!-- ________ ______ __________ _________ CONTACT SECTION ______ _____ _______ __________ -->
+			<section class="page5">
 				<div id="contact" class="scrollDiv invisible">
 					Five
 				</div>
+			</section>
 
-
-				<!-- _________________________________ TRY SECTION ____________________________ -->
-
+<!-- ________ _______ __________ ________ TRY SECTION ______ ______ ______ __________ -->
+			<section class="last-page">
 				<div id="try" class="scrollDiv invisible">
 					Let's go
 				</div>
-
+			</section>
 
 				<!-- <span>
 					<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons fa  fa-step-backward"></i></a>
@@ -133,6 +136,7 @@
 		</main>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.tiltedpage-scroll.js"></script>
 	<script type="text/javascript" src="scripts/eventhandlers.js"></script>
 
 	</body>
