@@ -12,8 +12,8 @@
 	</head>
 	<body>
 
-		<!-- _________________________________ NAVBAR ____________________________ -->
-		<aside>
+		<!-- *************************** NAVBAR *********************-->
+<!-- 		<aside>
 			<div class="nav"
 				id="navbar"
 				onmouseenter="navMouseIn()"
@@ -44,18 +44,28 @@
 					<a href="#try" class="hidden-nav">Try Now!</a>
 				</p> <br/>
 			</div>
-		</aside>
+		</aside> -->
+
+
 		<main id="main">
 
-<!-- _________________________________ ABOUT SECTION ____________________________ -->
-			<section class="page1" >
 
-				<div id="about" class="scrollDiv active">
-					<h1> Hi! I am Elina Hovakimyan</h1>
+			<!-- *************************** ABOUT *********************-->
+			<section id="about">
+				<div class="paral parallax1">
+					<div class="row title">
+						<div class="col m8 s12"> 
+							<h1>Hi, I am Elina!</h1>
+						</div>
+						<div class="col m4 s12">
+							<a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Software Engineer">
+								<img src="img/b-w-pic.jpg" class="myPhoto"/>
+							</a>
+						</div> 
+					</div>
 
-					<!-- <img src="img/about-image.png" class="aboutPhoto"> -->
-					<img src="img/my-photo.jpg" class="myPhoto">
-					<h2><code>&#10094;wlc&#10095; Let's work together! &#10094;/wlc&#10095;</code></h2>
+					
+					<h4><code>&#10094;wlc&#10095; Let's work together! &#10094;/wlc&#10095;</code></h4>
 
 					<p>
 						I am a Javascript ninja, front-end wizard and WordPress expert with 2+ years experience.
@@ -63,6 +73,10 @@
 						Having an in-depth knowledge including HTML5, CSS, CSS3, SASS, JavaScript, ReactJS, NodeJS with Express framework.
 						To make my projects look better and be perfectly responsive I use frameworks, such as Bootstrap and MaterializeCSS.
 					</p>
+
+
+
+					<!-- ___________________________ BUTTONS ___________________-->
 					<div class="contact-btns">
 						<a class="waves-effect waves-light btn about-btn" href="assets/CV_ElinaHovakimyan.pdf" download><i class="material-icons left fa fa-cloud-download"></i>Download My CV</a>
 						<a class="waves-effect waves-light btn about-btn"><i class="material-icons right fa fa-envelope"></i>Start a Project</a>
@@ -87,56 +101,144 @@
 						</a>
 
 						<a class="tooltipped" data-position="top" data-delay="50" data-tooltip="+37455855615">
-								<i class="social fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+							<i class="social fa fa-whatsapp fa-2x" aria-hidden="true"></i>
 						</a>
 					</div>
 				</div>
 			</section>
 
-<!-- _______ _________ __________ _______ SKILLLS SECTION ______ ______ _______ _________ -->
 
-			<section class="page2" id="skillssec">
-				<div id="skills" class="scrollDiv invisible next">
-					Two
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- *************************** SKILLS *********************-->
+
+			<section id="skills">
+				<div class="static part1">
+					<h2>Something goes here about skills</h2>
 				</div>
 			</section>
 
-<!-- ______ _________ _________ _________ PORTFOLIO SECTION ______ ______ _______ _________ -->
-			<section class="page3">
-				<div id="portfolio" class="scrollDiv invisible">
-					Three
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- *************************** PORTFOLIO *********************-->
+
+			<section id="portfolio">
+				<div class="">
+				<div class="container">
+					<img src="img/a.jpg" alt="Avatar" class="image img1">
+					<div class="overlay">
+						<div class="text">Hello World</div>
+					</div>
+				</div>
+				<div class="container2">
+					<img src="img/a.jpg" alt="Avatar" class="image2 img2">
+					<div class="overlay2">
+						<div class="text2">Hello World</div>
+					</div>
+				</div>
+				<div class="container3">
+					<img src="img/a.jpg" alt="Avatar" class="image3 img3">
+					<div class="overlay3">
+						<div class="text3">Hello World</div>
+					</div>
+				</div>
+				
+
 				</div>
 			</section>
+			
 
-<!-- ______ _____________ _______ _______ EJOURNAL SECTION ____ __________ ________ ______ -->
-		 	<section class="page4">
-				<div id="ejournal" class="scrollDiv invisible">
-					Four
-				</div>
+
+
+
+
+
+
+
+
+
+
+
+			<!-- *************************** EJOURNAL *********************-->
+
+			<section id="ejournal">
+				<div class="static part2"></div>
+			</section>
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- *************************** CONTACT *********************-->
+
+			<section id="contact">
+				<div class="paral parallax3"></div>
 			</section>
 
-<!-- ________ ______ __________ _________ CONTACT SECTION ______ _____ _______ __________ -->
-			<section class="page5">
-				<div id="contact" class="scrollDiv invisible">
-					Five
-				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- *************************** TRY NOW *********************-->
+
+			<section id="try">
+				<div class="static part3"></div>
 			</section>
 
-<!-- ________ _______ __________ ________ TRY SECTION ______ ______ ______ __________ -->
-			<section class="last-page">
-				<div id="try" class="scrollDiv invisible">
-					Let's go
-				</div>
-			</section>
-
-				<!-- <span>
-					<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons fa  fa-step-backward"></i></a>
-					<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons fa  fa-step-forward"></i></a>
-				</span> -->
 		</main>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-	<script type="text/javascript" src="scripts/jquery.tiltedpage-scroll.js"></script>
+	<!-- <script type="text/javascript" src="scripts/jquery.tiltedpage-scroll.js"></script> -->
 	<script type="text/javascript" src="scripts/eventhandlers.js"></script>
 
 	</body>

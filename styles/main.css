@@ -1,29 +1,31 @@
 body {
-	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-	margin: 0;
-	font-family: 'Alegreya', serif;
 	color: white;
-	max-width: 1200px;
-}
-/*
-.active {
-	display: block !important;
 }
 
-.invisible, .previous, .next {
-	display: none !important;
-}*/
-
-section {
-	width: 100%;
-	max-width: 1200px;
-	display: block;
-	margin-top: 40px;
-	margin-bottom: 100px;
+h2 {
+	margin: 0 !important;
+	padding: 20px;
 }
 
+main {
+	text-align: center;
+}
 
-/* --------------- NAVIGATION --------------------*/
+.paral {
+	color: white;
+	/* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.static {
+	color: #7a5b48;
+}
+
+/* ************************ NAVBAR ********************** */
+
 
 aside {
 	position: fixed;
@@ -35,8 +37,8 @@ aside {
 }
 
 #navbar {
-	border-top-right-radius: 100px;
-	border-bottom-right-radius: 100px;
+	border-top-right-radius: 90px;
+	border-bottom-right-radius: 90px;
 	padding: 18px;
 	font-size: 17px;
 }
@@ -50,7 +52,7 @@ aside {
 	position: absolute;
 	float: left;
 	text-decoration: none;
-	color: #024D73;
+	color: #564132;
 	font-size: 20px;
 }
 
@@ -58,49 +60,75 @@ aside {
 	display: none;
 }
 
-/* ------------------------- MAIN DIVS ---------------------*/
 
-.scrollDiv {
-	width: 90%;
-	float: right;
-	height: 90vh;
-	text-align: center;
+/* ************************ MAIN ********************** */
+
+.parallax1 {
+	/* The image used */
+    background-image: url("../img/1.jpeg");
+
+    /* Set a specific height */
+    min-height: 600px; 
+
+    padding: 20px 40px;
+    margin: 0;
 }
 
-/*__________________________ about ________________________*/
-
-#about {
-	 background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); 
-	border: 2px black solid;
+.parallax1 p {
+	padding: 10px 100px;
 }
 
-#about h1 {
-	margin-bottom: 5px;
+.contact-btns {
+	padding: 20px;
+	margin: 10px 20px;
 }
 
-@media screen and (min-width: 865px) {
+.contact-btns a {
+	margin: 10px;
+	background-color: #7a5b48;
+	opacity: 0.8;
+	font-size: 16px;
+}
 
-	#about h1:hover {
-		letter-spacing: 5px;
+.contact-btns a:hover {
+	background-color: #54372a;
+	opacity: 1.0;
+	font-size: 18px;
+}
+
+.social-icons {
+	margin-top: 35px;
+}
+
+.social-icons i {
+	color: black;
+}
+
+.title {
+	margin-top: 30px; 
+}
+@media screen and (max-width: 780px) {
+
+	.about-btn {
+		margin: 5px !important;
+	}
+	.parallax1 p {
+		padding: 10px 40px;
+		margin: 20px;
+	}
+
+	.myPhoto {
+		float: left;
+		width: 60%;
 	}
 }
 
 .myPhoto {
 	margin: 0 auto;
 	display: block;
-	width: 30%;
+	width: 50%;
 	border: 3px white solid;
 	border-radius: 100%;
-}
-
-@media screen and (min-width: 780px) {
-
-	.myPhoto {
-		margin: 0 auto;
-		display: block;
-		width: 17%;
-	}
-
 }
 
 .myPhoto:hover {
@@ -112,102 +140,194 @@ aside {
 	transform: scale(1.1);
 }
 
-#about h2 {
-		font-size: 30px;
-}
 
-#about p {
-		margin: 10px 80px;
-		font-size: 16px;
-}
 
-@media screen and (max-width: 780px) {
-	#about h1 {
-		font-size: 30px;
-	}
-	#about p {
-		margin: 10px 20px;
-		font-size: 13px;
-	}
-	#about h2 {
-		font-size: 20px;
-	}
 
-	.about-btn {
-		margin: 5px !important;
-	}
-}
 
-.about-btn {
-		background-color: #169dce !important;
-		width: 210px;
-		padding: 3px;
-		margin: 15px;
-}
 
-.about-btn i {
-	margin: 1px !important;
-}
 
-.social-icons {
-		margin-top: 15px;
-}
 
-i.social {
-	margin: 6px;
-	color: #024D73;
-	cursor: pointer;
-}
 
-i.social:hover {
-	padding: 0 10px;
-	color: #169dce;
+
+
+
+
+
+
+
+.part1 {
+	background-image: url("../img/white.jpg");
+	color: #7a5b48;
+	margin: 0;
+	height: 600px;
 }
 
 
 
-/*__________________________ skills ________________________*/
 
 
-#skills {
-    background:  url(../img/my-photo.jpg) center center;
-	border: 2px black solid;
-}
 
 
-/*__________________________ portfolio ________________________*/
 
+
+/* ******************************** PORTFOLIO *****************************/
 
 #portfolio {
-    background:  url(../img/about-image.png) center center;
-	border: 2px black solid;
+	border: 1px black solid;
+	min-height: 300px; 
+}
+.container {
+  position: relative;
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.image {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 20%;
+  left: 0;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container2 {
+  position: relative;
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.image2 {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+}
+
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container2:hover .overlay2 {
+  width: 20%;
+  left: 0;
+}
+
+.text2 {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container3 {
+  position: relative;
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.image3 {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+}
+
+.overlay3 {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container3:hover .overlay3 {
+  width: 20%;
+  left: 0;
+}
+
+.text3 {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 
 
-/*__________________________ ejournal ________________________*/
 
 
-#ejournal {
-    background:  url(../img/pes.jpg) center center;
-	border: 2px black solid;
+
+
+.parallax2 {
+    /* Set a specific height */
+    min-height: 450px; 
 }
 
-
-/*__________________________ contact ________________________*/
-
-
-#contact {
-	/* background-color: #4CBE9E; */
-	border: 2px black solid;
+.part2 {
+	background: white;
+	color: #26a69a;
+	height: 400px;
 }
 
+.parallax3 {
+	/* The image used */
+    background-image: url("../img/3.jpeg");
 
+    /* Set a specific height */
+    min-height: 500px; 
+}
 
-/*__________________________ try now ________________________*/
-
-
-#try {
-	/* background-color: #F06060; */
-	border: 2px black solid;
+.part3 {
+	background: white;
+	height: 600px;
 }
