@@ -3,21 +3,36 @@
 <html>
 	<head>
 		<title>Elina's Personal Website</title>
-		<link rel="stylesheet" type="text/css" href="styles/main.css"/>
-		<link rel="stylesheet" type="text/css" href="styles/tiltedpage-scroll.css"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+		<link rel="shortcut icon" href="img/logo.png">
 
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="author" content="Elina Hovakimyan">
+		<meta name="description" content="Welcome to Elina Hovakimyan's personal website, who is a growing full-stack web developer. Here you can learn more about Elina, her experience and get in touch with her">
+		<meta name="keywords" content="Elina Hovakimyan, web, website, full-stack, web developer, Javascript, personal, NodeJS, Express, online CV, personal website ">
+		<meta name="robots" content="index, follow">
+
+		<!-- Open Graph data -->
+		<meta property="og:title" content="Elina's Personal Website" />
+		<meta property="og:url" content="http://www.elinahovakimyan.com/" />
+		<meta property="og:image" content="http://elinahovakimyan.com/default.jpg" />
+		<meta property="og:image:type" content="image/jpg">
+		<meta property="og:description" content="Welcome to Elina Hovakimyan's personal website, who is a growing full-stack web developer. Here you can learn more about Elina, her experience and get in touch with her" />
+		<meta property="og:site_name" content="Elina's Personal Website" />
+
+		<!--APPLE TOUCH ICON-->
+		<link rel="apple-touch-icon" href="img/logo.png">
+		<link rel="stylesheet" type="text/css" href="styles/main.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	</head>
 	<body>
-
-		<!-- *************************** NAVBAR *********************-->
-<!-- 		<aside>
+				<!-- *************************** NAVBAR *********************-->
+		<aside>
 			<div class="nav"
-				id="navbar"
-				onmouseenter="navMouseIn()"
-				onmouseleave="navMouseOut()">
+				id="navbar">
 
 				<p class="nav-link">
 					<a href="#about">A</a>
@@ -44,64 +59,65 @@
 					<a href="#try" class="hidden-nav">Try Now!</a>
 				</p> <br/>
 			</div>
-		</aside> -->
+		</aside>
 
 
 		<main id="main">
 
 
-			<!-- *************************** ABOUT *********************-->
+			<!--===================================================================================
+			                                         ABOUT
+			=====================================================================================-->
 			<section id="about">
 				<div class="paral parallax1">
-					<div class="row title">
-						<div class="col m8 s12"> 
-							<h1>Hi, I am Elina!</h1>
-						</div>
-						<div class="col m4 s12">
-							<a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Software Engineer">
-								<img src="img/b-w-pic.jpg" class="myPhoto"/>
-							</a>
-						</div> 
-					</div>
+						<h4><code>&#10094;hello&#10095; Welcome to Elina's Website!!! &#10094;/hello&#10095;</code></h4>
+						<img src="img/b-w-pic.jpg" class="myPhoto">
 
-					
-					<h4><code>&#10094;wlc&#10095; Let's work together! &#10094;/wlc&#10095;</code></h4>
+						<h2 id="first" class="active">React Developer</h2>
+						<h2 id="second" class="invisible">Software Engineer</h2>
+						<h2 id="third" class="invisible">Best IT Student</h2>
+						<h2 id="fourth" class="invisible">JavaScript Ninja</h2>
+						<h2 id="fifth" class="invisible">Front-end Developer</h2>
 
-					<p>
-						I am a Javascript ninja, front-end wizard and WordPress expert with 2+ years experience.
-						I am experienced with all stages of the development cycle for dynamic web projects.
-						Having an in-depth knowledge including HTML5, CSS, CSS3, SASS, JavaScript, ReactJS, NodeJS with Express framework.
-						To make my projects look better and be perfectly responsive I use frameworks, such as Bootstrap and MaterializeCSS.
-					</p>
+					<h5 class="intro-p">
+						Let's surf on my website together and see how I can be helpful.
+					</h5>
+<!-- Contacts -->
+          <div class="infos">
+              <ul class="profile-list">
+                  <li class="clearfix">
+                      <i class="fa fa-envelope"></i>
+                      elinahovakimyan@gmail.com
+                  </li>
+                  <li class="clearfix">
+                      <i class="fa fa-globe"></i>
+                      elinahovakimyan.com
+                  </li>
+                  <li class="clearfix">
+                      <i class="fa fa-map-marker"></i>
+                      Yerevan, Armenia
+                  </li>
 
+              </ul>
+          </div>
 
 
 					<!-- ___________________________ BUTTONS ___________________-->
 					<div class="contact-btns">
-						<a class="waves-effect waves-light btn about-btn" href="assets/CV_ElinaHovakimyan.pdf" download><i class="material-icons left fa fa-cloud-download"></i>Download My CV</a>
-						<a class="waves-effect waves-light btn about-btn"><i class="material-icons right fa fa-envelope"></i>Start a Project</a>
+						<a class="waves-effect waves-light btn about-btn" href="assets/CV_ElinaHovakimyan.pdf" download><i class="left fa fa-cloud-download"></i>Download My CV</a>
+						<a class="waves-effect waves-light btn about-btn"><i class="right fa fa-envelope"></i>Start a Project</a>
 					</div>
 
 
 					<div class="social-icons">
-						<a class="tooltipped" data-position="top" data-delay="50" data-tooltip="elinahovakimyan@gmail.com">
-								<i class="social fa fa-google fa-2x" aria-hidden="true"></i>
-						</a>
-
-						<a href="https://www.facebook.com/elin.hovakimyan" target="_blank">
-							<i class="social fa fa-facebook-official fa-3x" aria-hidden="true"></i>
-						</a>
-
-						<a href="https://github.com/elinahovakimyan" target="_blank">
-							<i class="social fa fa-github fa-4x" aria-hidden="true"></i>
-						</a>
-
 						<a href="https://www.linkedin.com/in/elina-hovakimyan/" target="_blank">
-							<i class="social fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+							<i class="social fa fa-linkedin-square fa-spin fa-3x" aria-hidden="true"></i>
 						</a>
-
-						<a class="tooltipped" data-position="top" data-delay="50" data-tooltip="+37455855615">
-							<i class="social fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+						<a href="https://github.com/elinahovakimyan" target="_blank">
+							<i class="social fa fa-github fa-spin fa-4x" aria-hidden="true"></i>
+						</a>
+						<a href="https://www.youtube.com/channel/UCiTxNtvN4mXqaa2kkpKB8Ow?view_as=subscriber" target="_blank">
+							<i class="social fa fa-youtube fa-spin fa-3x" aria-hidden="true"></i>
 						</a>
 					</div>
 				</div>
@@ -122,12 +138,213 @@
 
 
 
-			<!-- *************************** SKILLS *********************-->
+			<!--===================================================================================
+			                                         PORTFOLIO
+			=====================================================================================-->
 
-			<section id="skills">
-				<div class="static part1">
-					<h2>Something goes here about skills</h2>
-				</div>
+			<section id="portfolio" class="static part1">
+					<h2>My Projects</h2>
+					<h5>From React.js to php, check out my latest web projects. </h5>
+
+					<div class="chips">
+						<div class="chip">
+							<img src="img/react.png" alt="Contact Person">
+							React.js
+						</div>
+						<div class="chip">
+							<img src="img/redux.png" alt="Contact Person">
+							Redux
+						</div>
+						<div class="chip">
+							<img src="img/html5.png" alt="Contact Person">
+							HTML5
+						</div>
+						<div class="chip">
+							<img src="img/css3.png" alt="Contact Person">
+							CSS3
+						</div>
+						<div class="chip">
+							<img src="img/materialize.png" alt="Contact Person">
+							MaterializeCSS
+						</div>
+						<div class="chip">
+							<img src="img/bootstrap.png" alt="Contact Person">
+							Bootstrap
+						</div>
+						<div class="chip">
+							<img src="img/sass.png" alt="Contact Person">
+							Sass
+						</div>
+						<div class="chip">
+							<img src="img/node.png" alt="Contact Person">
+							NodeJS
+						</div>
+						<div class="chip">
+							<img src="img/git.png" alt="Contact Person">
+							Git
+						</div>
+						<div class="chip">
+							<img src="img/php.png" alt="Contact Person">
+							PHP
+						</div>
+					</div>
+
+
+					<div class="row portfolio_row">
+
+						<div class="col l3 m6 s12 img_cont">
+							<img src="img/todo.JPG" alt="Avatar" class="image">
+							<div class="overlay overlay1">
+								<div class="text">Todo App</div>
+								<img src="img/react.png" alt="Logo" class="portfolio-logo">
+								<img src="img/redux.png" alt="Logo" class="portfolio-logo">
+							</div>
+						</div>
+
+						<div class="col l3 m6 s12 img_cont">
+							<img src="img/tiamo.JPG" alt="Avatar" class="image">
+							<div class="overlay overlay2">
+								<div class="text">Tiamo Jewelry</div>
+								<img src="img/wordpress.png" alt="Logo" class="portfolio-logo">
+							</div>
+						</div>
+
+						<div class="col l3 m6 s12 img_cont">
+							<img src="img/personal.JPG" alt="Avatar" class="image">
+							<div class="overlay overlay3">
+								<div class="text">Previous Portfolio</div>
+								<img src="img/html-css-js-logo.png" alt="Logo" class="triple-logo">
+								<img src="img/php.png" alt="Logo" class="portfolio-logo">
+							</div>
+						</div>
+
+						<div class="col l3 m6 s12 img_cont">
+							<img src="img/hask.JPG" alt="Avatar" class="image">
+							<div class="overlay overlay4">
+								<div class="text">HASK's Website</div>
+								<img src="img/html-css-js-logo.png" alt="Logo" class="triple-logo">
+								<img src="img/bootstrap.png" alt="Logo" class="portfolio-logo">
+							</div>
+						</div>
+
+					</div>
+			</section>
+
+
+
+
+
+			<!--===================================================================================
+			                                         SKILLS
+			=====================================================================================-->
+			<section id="skills" class=" paral parallax-skills">
+			    <div class="container">
+			        <!-- SECTION TITLE -->
+			        <div class="section-title">
+			            <h4 class="text-uppercase text-center"><i class="title-icon fa fa-sliders"></i>Soft Skills</h4>
+			            <h5 class="text-center">Knowledge is important, but the skills make a FULL package with them.</h5>
+			        </div>
+	                <div id="skills-card" class="card">
+	                    <div class="card-content">
+	                        <div class="row">
+	                            <div class="col l4 m4 s12">
+	                                <!-- FIRST SKILL SECTION -->
+	                                <div class="skills-title">
+	                                    <h6 class="text-center">Technical</h6>
+	                                </div>
+	                                <!-- FIRST SKILL BAR -->
+	                                <div class="skillbar" data-percent="85%">
+	                                    <div class="skillbar-title"><span>SEO & SEM</span></div>
+	                                    <div class="skillbar-bar"></div>
+	                                    <div class="skill-bar-percent">85%</div>
+	                                </div>
+	                                <!-- SECOND SKILL BAR  -->
+	                                <div class="skillbar" data-percent="90%">
+	                                    <div class="skillbar-title"><span>Digital Marketing</span></div>
+	                                    <div class="skillbar-bar"></div>
+	                                    <div class="skill-bar-percent">90%</div>
+	                                </div>
+	                                <!-- THIRD SKILL BAR  -->
+	                                <div class="skillbar" data-percent="70%">
+	                                    <div class="skillbar-title"><span>Graphic Design</span></div>
+	                                    <div class="skillbar-bar"></div>
+	                                    <div class="skill-bar-percent">70%</div>
+	                                </div>
+	                                <!-- FOURTH SKILL BAR  -->
+	                                <div class="skillbar" data-percent="88%">
+	                                    <div class="skillbar-title"><span>Project management</span></div>
+	                                    <div class="skillbar-bar"></div>
+	                                    <div class="skill-bar-percent">88%</div>
+	                                </div>
+	                            </div>
+
+
+	                            <div class="col l4 m4 s12">
+	                                <!-- SECOND SKILL SECTION -->
+	                                <div class="skills-title">
+	                                    <h6 class="text-center">Personal</h6>
+	                                </div>
+	                                <!-- FIRST SKILL BAR -->
+	                                <div class="skillbar" data-percent="84%">
+	                                    <div class="skillbar-title"><span>Time management</span></div>
+	                                    <div class="skillbar-bar"></div>
+	                                    <div class="skill-bar-percent">84%</div>
+	                                </div>
+	                                <!-- SECOND SKILL BAR  -->
+	                                <div class="skillbar" data-percent="80%">
+	                                    <div class="skillbar-title"><span>Teamwork</span></div>
+	                                    <div class="skillbar-bar"></div>
+	                                    <div class="skill-bar-percent">80%</div>
+	                                </div>
+	                                <!-- THIRD SKILL BAR  -->
+	                                <div class="skillbar" data-percent="91%">
+	                                    <div class="skillbar-title"><span>Responsibility</span></div>
+	                                    <div class="skillbar-bar"></div>
+	                                    <div class="skill-bar-percent">90%</div>
+	                                </div>
+	                                <!-- FOURTH SKILL BAR  -->
+	                                <div class="skillbar" data-percent="89%">
+	                                    <div class="skillbar-title"><span>Hardworking</span></div>
+	                                    <div class="skillbar-bar"></div>
+	                                    <div class="skill-bar-percent">93%</div>
+	                                </div>
+	                            </div>
+
+
+	                            <div class="col l4 m4 s12">
+	                                <!-- THIRD SKILL SECTION -->
+	                                <div class="skills-title">
+	                                    <h6 class="text-center">Software</h6>
+	                                </div>
+	                                <!-- FIRST SKILL BAR -->
+	                                <div class="skillbar" data-percent="70%">
+	                                    <div class="skillbar-title"><span>Adobe Photoshop</span></div>
+	                                    <div class="skillbar-bar"></div>
+	                                    <div class="skill-bar-percent">70%</div>
+	                                </div>
+	                                <!-- SECOND SKILL BAR  -->
+	                                <div class="skillbar" data-percent="87%">
+	                                    <div class="skillbar-title"><span>Content Management Systems</span></div>
+	                                    <div class="skillbar-bar"></div>
+	                                    <div class="skill-bar-percent">87%</div>
+	                                </div>
+	                                <!-- THIRD SKILL BAR  -->
+	                                <div class="skillbar" data-percent="65%">
+	                                    <div class="skillbar-title"><span>UI/UX</span></div>
+	                                    <div class="skillbar-bar"></div>
+	                                    <div class="skill-bar-percent">65%</div>
+	                                </div>
+	                                <!-- FOURTH SKILL BAR  -->
+	                                <div class="skillbar" data-percent="80%">
+	                                    <div class="skillbar-title"><span>Google Analytics</span></div>
+	                                    <div class="skillbar-bar"></div>
+	                                    <div class="skill-bar-percent">80%</div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+			        </div>
+			    </div>
 			</section>
 
 
@@ -137,109 +354,25 @@
 
 
 
-
-
-
-
-
-
-
-			<!-- *************************** PORTFOLIO *********************-->
-
-			<section id="portfolio">
-				<div class="">
-				<div class="container">
-					<img src="img/a.jpg" alt="Avatar" class="image img1">
-					<div class="overlay">
-						<div class="text">Hello World</div>
-					</div>
-				</div>
-				<div class="container2">
-					<img src="img/a.jpg" alt="Avatar" class="image2 img2">
-					<div class="overlay2">
-						<div class="text2">Hello World</div>
-					</div>
-				</div>
-				<div class="container3">
-					<img src="img/a.jpg" alt="Avatar" class="image3 img3">
-					<div class="overlay3">
-						<div class="text3">Hello World</div>
-					</div>
-				</div>
-				
-
-				</div>
-			</section>
-			
-
-
-
-
-
-
-
-
-
-
-
-
-			<!-- *************************** EJOURNAL *********************-->
-
-			<section id="ejournal">
-				<div class="static part2"></div>
-			</section>
-			
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			<!-- *************************** CONTACT *********************-->
-
+			<!--===================================================================================
+			                                         CONTACT
+			=====================================================================================-->
 			<section id="contact">
-				<div class="paral parallax3"></div>
+				<h3>Available for freelance work</h3>
+
+				<div class="static part2">
+					<h3>Available for freelance work</h3>
+				</div>
 			</section>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			<!-- *************************** TRY NOW *********************-->
-
-			<section id="try">
-				<div class="static part3"></div>
-			</section>
 
 		</main>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-	<!-- <script type="text/javascript" src="scripts/jquery.tiltedpage-scroll.js"></script> -->
 	<script type="text/javascript" src="scripts/eventhandlers.js"></script>
+	<script type="text/javascript" src="scripts/style.js"></script>
 
 	</body>
 </html>

@@ -1,5 +1,6 @@
 body {
 	color: white;
+	max-width: 100%;
 }
 
 h2 {
@@ -14,15 +15,16 @@ main {
 .paral {
 	color: white;
 	/* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .static {
 	color: #7a5b48;
 }
+
+
 
 /* ************************ NAVBAR ********************** */
 
@@ -65,27 +67,37 @@ aside {
 
 .parallax1 {
 	/* The image used */
-    background-image: url("../img/1.jpeg");
+  background-image: url("../img/1.jpeg");
+	background-attachment: fixed;
+  /* Set a specific height */
+  min-height: 600px;
 
-    /* Set a specific height */
-    min-height: 600px; 
-
-    padding: 20px 40px;
-    margin: 0;
+  height: 100vh;
+  padding: 20px 40px;
+  margin: 0;
 }
 
-.parallax1 p {
-	padding: 10px 100px;
+#second {
+	color: #fff7d8;
+}
+#third {
+	color: #fce7de;
+}
+#fourth {
+	color: #e3f7de;
+}
+#fifth {
+	color: #d9f0f7;
 }
 
 .contact-btns {
-	padding: 20px;
-	margin: 10px 20px;
+	padding: 10px;
+	margin: 0 20px;
 }
 
 .contact-btns a {
 	margin: 10px;
-	background-color: #7a5b48;
+	background: linear-gradient(141deg, #a5866b 0%, #967b64 51%, #7a5b48 75%);
 	opacity: 0.8;
 	font-size: 16px;
 }
@@ -96,19 +108,41 @@ aside {
 	font-size: 18px;
 }
 
+.invisible {
+	display: none;
+}
+
+.active {
+	display: block;
+}
+
+.big {
+	font-size: 60px;
+}
+
 .social-icons {
-	margin-top: 35px;
+	margin-top: 5px;
 }
 
 .social-icons i {
 	color: black;
 }
 
-.title {
-	margin-top: 30px; 
+i.social {
+	cursor: pointer;
 }
-@media screen and (max-width: 780px) {
 
+
+@media screen and (max-width: 780px) {
+	.parallax1 {
+		padding: 10px;
+	}
+	.active {
+		font-size: 22px;
+	}
+	.intro-p {
+		font-size: 20px;
+	}
 	.about-btn {
 		margin: 5px !important;
 	}
@@ -117,16 +151,24 @@ aside {
 		margin: 20px;
 	}
 
-	.myPhoto {
-		float: left;
-		width: 60%;
+	.contact-btns a, .contact-btns a:hover {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.parallax1 h4 {
+		font-size: 24px;
+	}
+	.contact-btns a i {
+		display: none;
 	}
 }
 
 .myPhoto {
 	margin: 0 auto;
 	display: block;
-	width: 50%;
+	width: 16%;
 	border: 3px white solid;
 	border-radius: 100%;
 }
@@ -155,12 +197,7 @@ aside {
 
 
 
-.part1 {
-	background-image: url("../img/white.jpg");
-	color: #7a5b48;
-	margin: 0;
-	height: 600px;
-}
+
 
 
 
@@ -172,126 +209,80 @@ aside {
 
 /* ******************************** PORTFOLIO *****************************/
 
-#portfolio {
-	border: 1px black solid;
-	min-height: 300px; 
+.part1 {
+	background-image: url("../img/white.jpg");
+	color: #7a5b48;
+	margin: 0;
+	padding-bottom: 50px;
 }
-.container {
-  position: relative;
-  width: 50%;
-  display: inline-block;
-  float: left;
+
+.portfolio_row {
+	margin: 5px 20px 10px 50px;
+}
+
+img {
+	max-width: 100%;
+}
+
+.img_cont {
+	position: relative;
+	width: 50%;
 }
 
 .image {
-  display: inline-block;
-  width: 20%;
-  height: auto;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 10px;
 }
 
 .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 100%;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: .5s ease;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(141deg, #d3bba7 0%, #89715c 51%, #7a5b48 75%);
+	overflow: hidden;
+	opacity: 0.95;
+	width: 0;
+	height: 100%;
+	transition: .5s ease;
 }
 
-.container:hover .overlay {
-  width: 20%;
-  left: 0;
+.img_cont:hover .overlay {
+  	width: 100%;
 }
 
-.text {
-  white-space: nowrap; 
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+.overlay1 {
+  	left: 100%;
 }
 
-.container2 {
-  position: relative;
-  width: 50%;
-  display: inline-block;
-  float: left;
-}
-
-.image2 {
-  display: inline-block;
-  width: 20%;
-  height: auto;
-}
-
-.overlay2 {
-  position: absolute;
-  bottom: 0;
-  left: 100%;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: .5s ease;
-}
-
-.container2:hover .overlay2 {
-  width: 20%;
-  left: 0;
-}
-
-.text2 {
-  white-space: nowrap; 
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.container3 {
-  position: relative;
-  width: 50%;
-  display: inline-block;
-  float: left;
-}
-
-.image3 {
-  display: inline-block;
-  width: 20%;
-  height: auto;
+.img_cont:hover .overlay1 {
+	left: 0;
 }
 
 .overlay3 {
-  position: absolute;
+  	width: 100%;
+	height: 0;
+}
+
+.img_cont:hover .overlay3 {
+	height: 100%;
+}
+
+.overlay4 {
+  bottom: 100%;
+  width: 100%;
+  height:0;
+}
+
+.img_cont:hover .overlay4 {
   bottom: 0;
-  left: 100%;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 0;
   height: 100%;
-  transition: .5s ease;
 }
 
-.container3:hover .overlay3 {
-  width: 20%;
-  left: 0;
-}
-
-.text3 {
-  white-space: nowrap; 
+.text {
+  white-space: nowrap;
   color: white;
   font-size: 20px;
   position: absolute;
@@ -302,32 +293,161 @@ aside {
   -ms-transform: translate(-50%, -50%);
 }
 
-
-
-
-
-
-
-.parallax2 {
-    /* Set a specific height */
-    min-height: 450px; 
+.portfolio-logo {
+	position: static;
+	margin-top: 30px;
+	max-width: 60px;
+	padding: 5px;
 }
 
-.part2 {
-	background: white;
-	color: #26a69a;
-	height: 400px;
+.triple-logo {
+	position: static;
+	margin-top: 30px;
+	max-width: 120px;
 }
 
-.parallax3 {
-	/* The image used */
-    background-image: url("../img/3.jpeg");
-
-    /* Set a specific height */
-    min-height: 500px; 
+.chips {
+	margin-left: 20px !important;
+	padding-bottom: 20px;
 }
 
-.part3 {
-	background: white;
-	height: 600px;
+.chips div {
+	margin: 5px;
+}
+
+@media screen and (max-width: 780px) {
+	.chips, .chips div {
+		margin: 5px 0;
+	}
+}
+
+@media screen and (min-width:992px) {
+		.part1 {
+			height: 100vh;
+		}
+		.chips {
+			margin: 80px !important;
+		}
+		#skills .card  {
+			margin-top: 70px;
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+-------------------------------------------------------------------------------
+SKILLS SECTION
+-------------------------------------------------------------------------------
+*/
+
+.parallax-skills {
+	background-image: url("../img/2.jpeg");
+	background-attachment: fixed;
+	min-height: 700px;
+}
+
+#skills .card {
+	background: linear-gradient(141deg, #d3bba7 0%, #89715c 51%, #7a5b48 75%);
+	color: #fff;
+}
+
+.section-title {
+	padding: 30px;
+}
+#skills .card .skills-title {
+    margin: 15px 0;
+}
+
+#skills .card .skills-title h6 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
+
+#skills .card .skillbar {
+    /*whole bar*/
+    position: relative;
+    display: block;
+    margin-bottom: 17px;
+    margin-top: 45px;
+    width: 100%;
+    padding: 0 0;
+    background: #442609;
+    height: 4px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+}
+
+#skills .card .skillbar .skillbar-title {
+    /*skill bar title*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1em;
+}
+
+#skills .card .skillbar .skillbar-title span {
+    /*title*/
+    display: block;
+    padding: 3px 0;
+    margin-top: -25px;
+    line-height: 15px;
+}
+
+#skills .card .skillbar .skillbar-bar {
+    /*skill bar*/
+    height: 4px;
+    width: 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+#skills .card .skillbar .skill-bar-percent {
+    /*skill percentage text*/
+    position: absolute;
+    right: 1px;
+    top: -20px;
+    font-size: .8em;
+    line-height: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+-------------------------------------------------------------------------------
+SKILLS SECTION
+-------------------------------------------------------------------------------
+*/
+
+#contact {
+	background-color: #7a5b48;
+	color: #fff;
+	min-height: 400px;
+	font-family: 'Roboto Mono', monospace;
+
 }

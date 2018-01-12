@@ -16,6 +16,16 @@ const navMouseOut = function() {
   	document.getElementById("navbar").style.backgroundColor = "transparent";
 }
 
+document.getElementById("navbar").addEventListener("mouseover", navMouseIn());
+document.getElementById("navbar").addEventListener("mouseout", navMouseOut());
+
+
+/***SKILLS***/
+$('div.skillbar').each(function () {
+    $(this).find('div.skillbar-bar').css({
+        width: $(this).attr('data-percent')
+    });
+});
 
 
 
